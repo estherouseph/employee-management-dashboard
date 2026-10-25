@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #18243a;
+  background: #f5f7fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body { margin: 0; min-width: 320px; background: #f5f7fc; color: #18243a; }
+h1, h2, h3, .navbar-brand { font-family: "Manrope", sans-serif; }
+.app-navbar { background: #1d3c91; min-height: 76px; box-shadow: 0 4px 20px rgba(24, 47, 103, .12); }
+.navbar-brand { letter-spacing: -.03em; }
+.brand-mark { display: inline-grid; place-items: center; width: 35px; height: 35px; border-radius: 11px; background: #fff; color: #2457d6; font-size: 12px; font-weight: 800; }
+.app-navbar .nav-link { color: rgba(255,255,255,.75); border-radius: 9px; margin-left: 4px; font-size: .94rem; }
+.app-navbar .nav-link:hover, .app-navbar .nav-link.active { color: #fff; background: rgba(255,255,255,.13); }
+.page-container { min-height: calc(100vh - 150px); max-width: 1120px; }
+.hero-panel { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: clamp(24px, 5vw, 42px); border: 1px solid #e7ecf8; border-radius: 20px; background: linear-gradient(115deg, #fff 0%, #f0f4ff 100%); }
+.eyebrow { color: #4267c8; font-size: .72rem; font-weight: 700; letter-spacing: .13em; }
+.hero-panel h1, .form-page h1 { color: #172849; letter-spacing: -.045em; }
+.hero-icon { display: grid; place-items: center; width: 86px; height: 86px; flex: 0 0 86px; border-radius: 24px; background: #e1e9ff; font-size: 38px; }
+.search-wrap { width: min(100%, 340px); }
+.form-control { border-color: #dfe5f0; }
+.form-control:focus { border-color: #7898f2; box-shadow: 0 0 0 .2rem rgba(49, 91, 207, .12); }
+.directory-card, .form-card, .state-card { overflow: hidden; border: 1px solid #e8ecf4; border-radius: 16px; background: #fff; box-shadow: 0 8px 28px rgba(28, 46, 87, .045); }
+.directory-toolbar { border-bottom: 1px solid #edf0f6; }
+.count-pill { padding: 5px 11px; border-radius: 999px; color: #3159bf; background: #edf2ff; font-size: .8rem; font-weight: 700; }
+.employee-table thead th { padding: 15px 22px; border-bottom: 1px solid #e8edf6; background: #f8faff; color: #77839b; font-size: .7rem; letter-spacing: .09em; font-weight: 700; white-space: nowrap; }
+.employee-table tbody td { padding: 16px 22px; border-color: #eff2f7; color: #27344b; }
+.employee-table tbody tr:last-child td { border-bottom: 0; }
+.employee-table tbody tr:hover { background: #fafbff; }
+.id-chip { display: inline-block; padding: 5px 8px; border-radius: 7px; background: #f0f3f9; color: #66738d; font-size: .8rem; font-weight: 700; }
+.avatar { display: inline-grid; place-items: center; width: 38px; height: 38px; flex: 0 0 38px; border-radius: 12px; background: #eaf0ff; color: #3159bf; font-size: .75rem; font-weight: 800; }
+.email-link { color: #4264b7; text-decoration: none; }
+.email-link:hover { text-decoration: underline; }
+.directory-footer { border-top: 1px solid #edf0f6; background: #fcfdff; }
+.form-page { max-width: 760px; margin: 0 auto; }
+.form-card-heading { display: flex; align-items: center; gap: 14px; padding: 24px 28px; border-bottom: 1px solid #edf0f6; }
+.form-heading-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: #eaf0ff; color: #3159bf; font-size: 25px; }
+.form-label { font-size: .9rem; font-weight: 700; color: #293650; }
+.form-control-lg, .input-group-lg > .input-group-text { font-size: .95rem; }
+.form-note { padding: 12px 14px; border-radius: 9px; background: #f7f9fd; color: #68758d; }
+.btn-primary { background: #2856ca; border-color: #2856ca; }
+.btn-primary:hover { background: #1f45a8; border-color: #1f45a8; }
+.app-footer { color: #8a94a8; font-size: .82rem; }
+@media (max-width: 575px) {
+  .app-navbar { min-height: 68px; }
+  .navbar-brand { font-size: .92rem; gap: 8px !important; }
+  .brand-mark { width: 30px; height: 30px; }
+  .app-navbar .nav-link { padding: 8px !important; font-size: .8rem; }
+  .hero-icon { width: 58px; height: 58px; flex-basis: 58px; border-radius: 17px; font-size: 28px; }
+  .employee-table thead th, .employee-table tbody td { padding: 13px 14px; }
+  .form-card-heading { padding: 20px; }
+}
